@@ -11,6 +11,7 @@ class webScraper(object):
         try:
             driver = webdriver.Chrome(executable_path=r"/Users/asheikhussain/Documents/chromedriver", chrome_options=chromeOptions)
         except exceptions.WebDriverException:
+            logger.log(logger.logLevel)
 
 
     def navigateToSite(self, website):

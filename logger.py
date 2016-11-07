@@ -9,9 +9,6 @@ class logger(object):
     #This is the log level for each log message
     logLevel = ["Severe", "Warning", "Info"]
 
-    #This is the file that stores the logs
-    __logFile = None
-
     def __new__(cls, path):
         if logger.__instance is None:
             logger.__instance = object.__new__(cls)
@@ -40,14 +37,18 @@ class logger(object):
             print "Exception : " + IOError.message
             raise
             #SHUT DOWN THE SERVER???
+        #If we have successfully opened the log file, then we can save the value
+        self.__logFile = __logFile
 
-
-    def log(self, logLevel, message):
+    def log(self, logLevel, module, message):
         if logger.__logFile is None:
             raise loggingException("The log file is not open. Please open another log file or check for any errors when opening your log files"
                                     "including read write permssions")
-        if self.logLevel == logLevel:
-            logger.__logFile.
+        if logger.logLevel.__contains__(logLevel):
+            self.__logFile.writelines("LogLevel : "logLevel + " | " + datetime.time() + " | Module : " + message)
+        else:
+            self.__logFile.writelines("Unknown : " + datetime.time() + " " + message)
+
 
 class loggingException(object):
     pass
