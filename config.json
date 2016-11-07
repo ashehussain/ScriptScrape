@@ -1,6 +1,6 @@
 {
-  "ApplicationName" : "HONY_Scraper",
+  "ApplicationName" : "Script_Scraper",
   "Version" : "1.0",
-  "WebDriverExecutablePath" : "/Users/asheikhussain/Documents/chromedriver"
+  "WebDriverExecutablePath" : "/Users/asheikhussain/Documents/chromedriver",
   "DefaultLogsFolder" : "~/logs/"
 }
