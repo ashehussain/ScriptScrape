@@ -45,7 +45,7 @@ class logger(object):
             raise loggingException("The log file is not open. Please open another log file or check for any errors when opening your log files"
                                     "including read write permssions")
         if logger.logLevel.__contains__(logLevel):
-            self.__logFile.writelines("LogLevel : "logLevel + " | " + datetime.time() + " | Module : " + message)
+            self.__logFile.writelines("LogLevel : " + logLevel + " | " + datetime.time() + " | Module : " + message)
         else:
             self.__logFile.writelines("Unknown : " + datetime.time() + " " + message)
 
