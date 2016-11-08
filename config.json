@@ -2,5 +2,5 @@
   "ApplicationName" : "Script_Scrape",
   "Version" : "1.0",
   "WebDriverExecutablePath" : "/Users/asheikhussain/Documents/chromedriver",
-  "DefaultLogsFolder" : "~/logs/"
+  "DefaultLogsFolder" : "/logs/"
 }
